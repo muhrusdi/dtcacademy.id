@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react"
 import {
-  Globalnav,
   Container,
   Banner,
   GlobalButton,
@@ -15,11 +14,11 @@ import {
   GlobalSectionContentItem,
   GlobalHeader,
   GlobalContentParagraf,
-  Globalfooter,
   GlobalSection,
   GlobalSectionContent,
   SectionContent,
 } from "../../components/styled"
+import Globalnav from "../../components/globalnav"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Row, Col, Table, Button } from "antd"
 import StickyBox from "react-sticky-box"
@@ -179,33 +178,7 @@ const Intro = () => {
   return (
     <>
       <SEO title="Intro Programming Class - DTC Academy" />
-      <Globalnav ref={haederRef}>
-        <Container>
-          <Flex justifyContent="space-between" alignItems="center" height={80}>
-            <Globalnav.Logo>
-              <Flex alignItems="center">
-                <div>
-                  <img style={{ height: 40 }} src={logoDtc} alt="dtc" />
-                </div>
-                <span
-                  css={css`
-                    @media (max-width: 576px) {
-                      display: none !important;
-                    }
-                  `}
-                >
-                  Be a UI Designer and Create a great product.
-                </span>
-              </Flex>
-            </Globalnav.Logo>
-            <div>
-              <Button size="large" type="primary">
-                Daftar Sekarang
-              </Button>
-            </div>
-          </Flex>
-        </Container>
-      </Globalnav>
+      <Globalnav ref={haederRef} />
       <Banner>
         <BackgroundImage
           height={"100vh"}
