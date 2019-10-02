@@ -24,7 +24,7 @@ const GlobalnavWrap = forwardRef(({ title }, ref) => {
                   }
                 `}
               >
-                Be a UI Designer and Create a great product.
+                {title}
               </span>
             </Flex>
           </Globalnav.Logo>
