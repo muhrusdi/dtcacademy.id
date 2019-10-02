@@ -177,7 +177,10 @@ const Intro = () => {
 
   return (
     <>
-      <SEO title="Intro Programming Class - DTC Academy" />
+      <SEO
+        title="Intro Programming Class - DTC Academy"
+        description="Be a skillful Programmer with Intro Programmer Class"
+      />
       <Globalnav ref={haederRef} />
       <Banner>
         <BackgroundImage
