@@ -186,7 +186,11 @@ const Intro = () => {
         title="Intro Programming Class - DTC Academy"
         description="Be a skillful Programmer with Intro Programmer Class"
       />
-      <Globalnav title="Intro Programming Class" ref={haederRef} />
+      <Globalnav
+        title="Intro Programming Class"
+        ref={haederRef}
+        link="https://forms.gle/qiLvYUBfMZQRS7WYA"
+      />
       <Banner>
         <BackgroundImage
           height={"100vh"}
