@@ -90,8 +90,12 @@ const Intro = () => {
     }
   })
 
+  const clickToJadwal = () => {
+    document.getElementById("#jadwal").scrollIntoView()
+  }
+
   const handleClickBreadcrumb = e => {
-    console.dir(e.target)
+    document.getElementById(e.target.hash).scrollIntoView()
   }
 
   const columnsTable = [
@@ -202,7 +206,9 @@ const Intro = () => {
                 Belajar fundamental programming dengan mentor berpengalaman dan
                 jadilah programmer yang handal. Kelas ini terbuka untuk semua.
               </p>
-              <GlobalButton type="primary">Lihat Jadwal</GlobalButton>
+              <GlobalButton type="primary" onClick={clickToJadwal}>
+                Lihat Jadwal
+              </GlobalButton>
             </div>
           </Container>
         </BannerContent>
