@@ -206,10 +206,11 @@ const Intro = () => {
                 }
               `}
             >
-              <h1>Be a skillful Programmer with Intro Programmer Class</h1>
+              <h1>Be a Skillful Programmer with Intro Programming Class</h1>
               <p>
                 Belajar fundamental programming dengan mentor berpengalaman dan
-                jadilah programmer yang handal. Kelas ini terbuka untuk semua.
+                jadilah programmer yang handal. Kelas ini terbuka untuk semua
+                (tidak perlu background IT)
               </p>
               <GlobalButton type="primary" onClick={clickToJadwal}>
                 Lihat Jadwal
@@ -505,7 +506,7 @@ const Intro = () => {
                                 Mengenal prinsip-prinsip dalam mendesain UI
                               </h4> */}
                               <p>
-                                pada modul ini, kamu akan berkenalan lebih jauh
+                                Pada modul ini, kamu akan berkenalan lebih jauh
                                 tentang python dan javascript. Setelah kamu
                                 menyelesaikan modul ini, kamu diharapkan dapat
                                 memiliki pemahaman dasar tentang 2 bahasa
