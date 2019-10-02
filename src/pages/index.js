@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
 import Image from "../components/image"
-import Seo from "../components/seo"
+import SEO from "../components/gatsby-seo"
 
 const ContextWrap = styled.div`
   height: 100%;
@@ -250,7 +250,7 @@ const IndexPage = () => {
       `}
       render={data => (
         <ContextWrap>
-          <Seo />
+          <SEO />
           <Global
             styles={css`
               html {

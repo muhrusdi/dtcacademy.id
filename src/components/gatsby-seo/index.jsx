@@ -30,7 +30,7 @@ const SEO = ({
             siteUrl
           }
         }
-        imgThumb: file(relativePath: { eq: "dtc_academy.png" }) {
+        imgThumb: file(relativePath: { eq: "dtc_thumb.jpg" }) {
           childImageSharp {
             fluid {
               src
@@ -44,7 +44,7 @@ const SEO = ({
   const metaTitle = title ? title : site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
   const ogImage = image
-    ? image
+    ? site.siteMetadata.siteUrl + image
     : site.siteMetadata.siteUrl + imgThumb.childImageSharp.fluid.src
 
   const schemaOrgJSONLD = [
