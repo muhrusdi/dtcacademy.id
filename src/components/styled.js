@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import { Button } from "antd"
+import numeral from "numeral"
 
 export const Globalnav = styled.nav`
   position: fixed;
@@ -256,16 +257,21 @@ export const CalcDiscount = ({ value }) => (
     {value.discount ? (
       <>
         <div>
-          <PriceNormal>Rp {value.price}</PriceNormal>
+          <PriceNormal>Rp {numeral(value.price).format("0,0")}</PriceNormal>
           <PriceSave>(Save {value.discount}%)</PriceSave>
         </div>
         <div>
-          <PriceDiscount>Rp 500.000</PriceDiscount>
+          <PriceDiscount>
+            Rp{" "}
+            {numeral(value.price - (value.price * value.discount) / 100).format(
+              "0,0"
+            )}
+          </PriceDiscount>
         </div>
       </>
     ) : (
       <div>
-        <PriceDiscount>Rp {value.price}</PriceDiscount>
+        <PriceDiscount>Rp {numeral(value.price).format("0,0")}</PriceDiscount>
       </div>
     )}
   </div>

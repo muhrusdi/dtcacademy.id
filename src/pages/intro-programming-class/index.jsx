@@ -22,13 +22,13 @@ import Globalnav from "../../components/globalnav"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Row, Col, Table, Button } from "antd"
 import StickyBox from "react-sticky-box"
-import Img from "gatsby-image"
+import numeral from "numeral"
 import illusGrid from "../../images/Repeat Grid 2.svg"
-import logoDtc from "../../images/logo-dtc.svg"
 import { InView } from "react-intersection-observer"
 import { css } from "@emotion/core"
 import SEO from "../../components/gatsby-seo"
 import GlobalfooterWrap from "../../components/globalfooter"
+import { discount } from "../../components/utils"
 
 const Intro = () => {
   const data = useStaticQuery(
@@ -159,7 +159,7 @@ const Intro = () => {
       key: "1",
       name: "Biaya Kelas (Promo awal)",
       desc: "Pembayaran dilakukan upgront 100%",
-      price: { price: 1000000, discount: 50 },
+      price: { price: 1000000, discount: 20 },
     },
     {
       key: "1",
@@ -194,10 +194,10 @@ const Intro = () => {
                 }
               `}
             >
-              <h1>Be a Front End Developer and Create a great product.</h1>
+              <h1>Be a skillful Programmer with Intro Programmer Class</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                corporis!
+                Belajar fundamental programming dengan mentor berpengalaman dan
+                jadilah programmer yang handal. Kelas ini terbuka untuk semua.
               </p>
               <GlobalButton type="primary">Lihat Jadwal</GlobalButton>
             </div>
@@ -231,7 +231,7 @@ const Intro = () => {
                     onClick={handleClickBreadcrumb}
                     href="#peluang-karir"
                   >
-                    Peluang Karir
+                    Kelebihan Kelas
                   </Breadcrums.Link>
                 </Breadcrums.Item>
                 <Breadcrums.Item>
@@ -288,7 +288,7 @@ const Intro = () => {
                   <Container>
                     <GlobalHeader
                       metaTitle="Tentang Program"
-                      title="Kelas User Interface (UI) Design akan mengajarkan Kamu tentang prinsip-prinsip mendesain sebuah tampilan aplikasi digital."
+                      title="Kelas Intro Programming akan mengajarkan kamu fundamental yang kamu butuhkan untuk menjadi seorang programmer"
                     />
                     <GlobalSectionContent>
                       <Row type="flex" gutter={60}>
@@ -300,7 +300,7 @@ const Intro = () => {
                               latar belakang IT sebelumnya karena Anda akan
                               belajar coding dari awal melalui modul programming
                               fundamental, membangun aplikasi Web secara lengkap
-                              dari Front End hingga Back End Development.
+                              dari Front End hingga Back End Development
                             </p>
                           </div>
                         </Col>
@@ -328,30 +328,28 @@ const Intro = () => {
                 >
                   <Container>
                     <GlobalHeader
-                      metaTitle="Peluang Karir"
-                      title="Saatnya menjadi UI Desainer yang handal dan berkarir di industri digital."
+                      metaTitle="Kelebihan Kelas"
+                      title="Kelebihan yang akan anda dapatkan dalam kelas ini"
                     />
                     <GlobalSectionContent>
                       <Row type="flex" gutter={60}>
                         <Col sm={24}>
                           <div>
-                            <p>
-                              Kebutuhan akan apli kasi yang menarik dan sesuai
-                              dengan kebutuhan user menjadi sangat penting untuk
-                              perusahaan sehingga peluang kerja seorang UI
-                              Designer sangat di butuhkan. Anda dapat bekerja di
-                              perusahaan start up, perusahaan besar, ataupun
-                              memulai membuat produk digitalmu sendiri.
-                              Kesempatan ini ada di depan anda jangan sampai
-                              anda melewatkan kesempatan baik ini.
-                            </p>
-                            <p>
-                              DTC Academy bekerja sama dengan banyak perusahaan
-                              baik start up ataupun perusahaan besar untuk
-                              dukungan karir mu kedepan. Anda dapat memulai
-                              karir sebagai UI Designer di perusahaan rekan
-                              kami.
-                            </p>
+                            <ul>
+                              <li>Materi mudah dipahami</li>
+                              <li>Tidak perlu background IT untuk bergabung</li>
+                              <li>Ruang belajar yang nyaman</li>
+                              <li>
+                                Mentor merupakan praktisi IT yang berpengalaman
+                              </li>
+                              <li>Online Group Support</li>
+                              <li>
+                                10 kali pertemuan eksklusif dengan dukungan
+                                mentor berpengalaman
+                              </li>
+                              <li>Sertifikat dan modul KIT</li>
+                              <li>Free Konsultasi</li>
+                            </ul>
                           </div>
                         </Col>
                       </Row>
@@ -392,11 +390,15 @@ const Intro = () => {
                                 Javascript dan python sebagai pilihan bahasa
                                 pemrogramannya untuk mengeksplorasi syntax dari
                                 sebuah bahasa pemrograman, dan menunjukan cara
-                                menulis dan mengkesekusi memulai membangun
-                                sebuah aplikasi serta mengertikan cara kerjanya
+                                menulis dan memulai membangun sebuah aplikasi
                                 yang sederhana. Modul ini juga akan memberikan
                                 pemahaman dasar bagaimana sebuah website
-                                bekerja.
+                                bekerja. Modul ini memberikan gambaran bagaimana
+                                mindset seorang programmer, dan langkah awal
+                                yang harus dilakukan ketika ingin bergelut di
+                                dunia pemrograman. Di modul ini juga akan
+                                dipaparkan bagaimana cara kerja dari sebuah
+                                aplikasi web
                               </p>
                             </div>
                           </Col>
@@ -421,14 +423,14 @@ const Intro = () => {
                               </h4> */}
                               <p>
                                 Pada modul ini Anda akan belajar bagaimana
-                                membangun sebuah website yang interaktif dan
-                                menarik sederhana dengan HTML, CSS dan
-                                Javascript. HTML digunakan untuk membuat
-                                struktur dari sebuah website, CSS digunakan
-                                untuk membuat sebuah website menjadi Indah dari
-                                sisi warna, ukuran, dll dan Javascript digunakan
-                                untuk membuat sebuah website menjadi lebih
-                                interaktif dengan adanya animasi.
+                                membangun sebuah website yang sederhana dengan
+                                HTML, CSS dan Javascript. HTML digunakan untuk
+                                membuat struktur dari sebuah website, CSS
+                                digunakan untuk membuat sebuah website menjadi
+                                Indah dari sisi warna, ukuran, dll dan
+                                Javascript digunakan untuk membuat sebuah
+                                website menjadi lebih interaktif dengan adanya
+                                animasi.
                               </p>
                               <p>
                                 Setelah Anda menyelesaikan modul ini, Anda akan
@@ -505,7 +507,7 @@ const Intro = () => {
                               <Flex>
                                 <span>05</span>
                                 <div>
-                                  <h5>Final Project</h5>
+                                  <h5>Level Up your skill</h5>
                                 </div>
                               </Flex>
                             </Step>
@@ -516,12 +518,12 @@ const Intro = () => {
                                 Mengenal prinsip-prinsip dalam mendesain UI
                               </h4> */}
                               <p>
-                                diakhir kelas, anda akan kami berikan tantangan
+                                Diakhir kelas, anda akan kami berikan tantangan
                                 untuk membuat sebuah project akhir untuk melihat
                                 perkembangan anda selama mengikuti kelas ini.
                                 Anda akan diberikan waktu untuk menyelesaikan
                                 project akhir ini dan mempresentasikan project
-                                akhir anda.{" "}
+                                akhir anda.
                               </p>
                             </div>
                           </Col>
@@ -552,38 +554,13 @@ const Intro = () => {
                                 footer={() => {
                                   let total = 0
                                   dataTable.map(item => {
-                                    total += item.price.price
+                                    total += discount(item)
                                   })
                                   return (
                                     <div
                                       style={{
                                         display: "flex",
                                         justifyContent: "space-between",
-                                      }}
-                                    >
-                                      <span>Total Biaya</span>
-                                      <span>{total}</span>
-                                    </div>
-                                  )
-                                }}
-                              />
-                            </TableSection>
-                            <TableSection>
-                              <Table
-                                columns={columnsTable}
-                                dataSource={dataTable}
-                                pagination={{ position: "none" }}
-                                footer={() => {
-                                  let total = 0
-                                  dataTable.map(item => {
-                                    total += item.price.price
-                                  })
-                                  return (
-                                    <div
-                                      style={{
-                                        display: "flex",
-                                        justifyContent: "space-between",
-                                        alignItems: "center",
                                       }}
                                     >
                                       <div style={{ width: "50%" }}>
@@ -607,12 +584,28 @@ const Intro = () => {
                                           tanggal yang ditentukan.
                                         </div>
                                       </div>
-                                      <span>{total}</span>
+                                      <span>
+                                        Rp {numeral(total).format("0,0")}
+                                      </span>
                                     </div>
                                   )
                                 }}
                               />
                             </TableSection>
+                            <div
+                              css={css`
+                                ul {
+                                  margin-top: 20px;
+                                }
+                              `}
+                            >
+                              <h4>Mekanisme pembayaran</h4>
+
+                              <ul>
+                                <li>Pembayaran Langsung</li>
+                                <li>Cicilan (Sampai 3 kali pembayaran)</li>
+                              </ul>
+                            </div>
                           </div>
                         </Col>
                       </Row>
@@ -625,51 +618,98 @@ const Intro = () => {
                 <SectionContent.Section id="#jadwal">
                   <Container>
                     <GlobalHeader
-                      metaTitle="Jadwal"
-                      title="Jadwal Kelas Intensive UI Master Class."
-                      desc="Silahkan pilih jadwal, sesuai schedule yang telah di tentukan."
+                      metaTitle="Jadwal dan Pilihan Kelas"
+                      title="Jadwal Kelas Intro Programming"
+                      desc="Silakan pilih jadwal kelas yang cocok dengan kamu"
                     />
 
                     <GlobalSectionContent>
                       <Row type="flex">
-                        <Col sm={8} xs={24}>
+                        <Col sm={6} xs={24}>
                           <div>
                             <DateContent.Head>
-                              <h4>Tanggal Pelaksanaan</h4>
+                              <h4>Mulai Belajar</h4>
                             </DateContent.Head>
                             <DateContent.Content>
-                              <div>30 September 2019 s/d</div>
-                              <div>21 Oktober 2019</div>
+                              <div>21 Oktobe s/d</div>
+                              <div>15 November 2019</div>
                             </DateContent.Content>
                           </div>
                         </Col>
                         <Col sm={8} xs={24}>
                           <div>
                             <DateContent.Head>
-                              <h4>Tanggal Pelaksanaan</h4>
+                              <h4>Hari dan Waktu</h4>
                             </DateContent.Head>
                             <DateContent.Content>
-                              <div>30 September 2019 s/d</div>
-                              <div>21 Oktober 2019</div>
+                              <div>
+                                Senin, Rabu, Jumat (Pukul 19.00 - 21.00) - Kelas
+                                Malam
+                              </div>
+                            </DateContent.Content>
+                          </div>
+                        </Col>
+                        <Col sm={6} xs={24}>
+                          <div>
+                            <DateContent.Head>
+                              <h4>Lokasi</h4>
+                            </DateContent.Head>
+                            <DateContent.Content>
+                              <div>DTC Academy (Jl. Hertasning 1 No. 30)</div>
+                            </DateContent.Content>
+                          </div>
+                        </Col>
+                        <Col sm={4} xs={24}>
+                          <div>
+                            <DateContent.Head>
+                              <h4 style={{ opacity: 0 }}>Pilih</h4>
+                            </DateContent.Head>
+                            <DateContent.Content>
+                              <Button type="primary">Daftar</Button>
+                            </DateContent.Content>
+                          </div>
+                        </Col>
+                      </Row>
+                      <Row type="flex">
+                        <Col sm={6} xs={24}>
+                          <div>
+                            <DateContent.Content>
+                              <div>21 Oktobe s/d</div>
+                              <div>23 November 2019</div>
                             </DateContent.Content>
                           </div>
                         </Col>
                         <Col sm={8} xs={24}>
                           <div>
-                            <DateContent.Head>
-                              <h4>Tanggal Pelaksanaan</h4>
-                            </DateContent.Head>
                             <DateContent.Content>
-                              <div>30 September 2019 s/d</div>
-                              <div>21 Oktober 2019</div>
+                              <div>
+                                Sabtu, Minggu (Pukul 10.00 - 13.00) - Kelas Pagi
+                              </div>
+                            </DateContent.Content>
+                          </div>
+                        </Col>
+                        <Col sm={6} xs={24}>
+                          <div>
+                            <DateContent.Content>
+                              <div>DTC Academy (Jl. Hertasning 1 No. 30)</div>
+                            </DateContent.Content>
+                          </div>
+                        </Col>
+                        <Col sm={4} xs={24}>
+                          <div>
+                            <DateContent.Content>
+                              <Button type="primary">Daftar</Button>
                             </DateContent.Content>
                           </div>
                         </Col>
                       </Row>
                       <div style={{ marginTop: 60 }}>
                         <p style={{ color: "#bfbfbf" }}>
-                          Ket: Promo early bird berlaku sampai tanggal 27 Sep
-                          2019
+                          Catat tanggal dan batas waktu pendaftarannya
+                          Pendaftaran Kelas :{" "}
+                          <span style={{ color: "#333" }}>
+                            Tanggal 3 sampai 16 Oktober 2019
+                          </span>
                         </p>
                         <Flex style={{ marginTop: 40 }}>
                           <span style={{ marginRight: 20 }}>
@@ -702,49 +742,48 @@ const Intro = () => {
                       <Row type="flex" gutter={60}>
                         <Col sm={24}>
                           <GlobalContentParagraf>
-                            <h4>
-                              Mengapa program UX Design sangat penting dan
-                              relevan untuk saya saat ini?
-                            </h4>
-                            <p>
-                              Apabila Anda memiliki produk digital seperti
-                              aplikasi web atau mobile, bekerja di Startup
-                              Digital, seorang Graphic Designer , atau siapa
-                              saja yang ingin mendalami UI Design dan berkarir
-                              sebagai UI Designer, course UI Design ini akan
-                              sangat bermanfaat untuk Anda. User Interface
-                              Design atau lebih dikenal dengan istilah UI Design
-                              bukan hanya sekedar menciptakan estetika design
-                              yang Indah untuk aplikasi web atau mobile Anda.
-                            </p>
-                            <p>
-                              UI Design adalah tentang bagaimana pengguna
-                              aplikasi memiliki keterikatan secara emosional dan
-                              memiliki pengalaman yang mudah, menyenangkan dan
-                              tepat sasaran dalam menggunakan sebuah aplikasi
-                              web atau mobile. UI Design yang baik akan sangat
-                              mempengaruhi customer loyalty dalam menggunakan
-                              aplikasi web atau mobile Anda
-                            </p>
-                            <p>
-                              Program training UI Design kami akan mempelajari
-                              prinsip-prinsip yang perlu Anda kuasai dalam
-                              menciptakan UI Design yang terbaik untuk aplikasi
-                              web atau mobile Anda.
-                            </p>
-                            <h4>
-                              Apakah saya harus memiliki background design untuk
-                              mengikuti course ini?
-                            </h4>
-                            <p>
-                              Apabila Anda memiliki background design sebelumnya
-                              akan jauh lebih baik. Tapi course ini terbuka
-                              untuk siapa saja yang tidak memiliki background
-                              design sama sekali karena course ini akan lebih
-                              banyak mendalami tentang karakteristik user untuk
-                              menciptakan produk digital maupun desain yang
-                              dapat diterima oleh masyarakat luas.
-                            </p>
+                            <div style={{ marginBottom: 40 }}>
+                              <h4>
+                                Q : Apakah program ini terbuka bagi yang tidak
+                                memiliki background IT?
+                              </h4>
+                              <p>
+                                A: Ya! Program ini terbuka untuk Anda yang tidak
+                                memiliki background IT sebelumnya. Anda akan
+                                diajarkan dari tahapan paling awal yaitu
+                                programming fundamental sehingga program ini
+                                terbuka untuk siapa saja yang tidak memiliki
+                                background IT.
+                              </p>
+                            </div>
+                            <div style={{ marginBottom: 40 }}>
+                              <h4>
+                                Q : Apa minimal Spesifikasi laptop untuk bisa
+                                mengikuti kelas ini
+                              </h4>
+                              <p>
+                                A: Ya! Program ini terbuka untuk Anda yang tidak
+                                memiliki background IT sebelumnya. Anda akan
+                                diajarkan dari tahapan paling awal yaitu
+                                programming fundamental sehingga program ini
+                                terbuka untuk siapa saja yang tidak memiliki
+                                background IT.
+                              </p>
+                            </div>
+                            <div style={{ marginBottom: 40 }}>
+                              <h4>
+                                Q : Berapa minimal dan maksimal usia untuk bisa
+                                mengikuti kelas ini?
+                              </h4>
+                              <p>
+                                A: Ya! Program ini terbuka untuk Anda yang tidak
+                                memiliki background IT sebelumnya. Anda akan
+                                diajarkan dari tahapan paling awal yaitu
+                                programming fundamental sehingga program ini
+                                terbuka untuk siapa saja yang tidak memiliki
+                                background IT.
+                              </p>
+                            </div>
                           </GlobalContentParagraf>
                         </Col>
                       </Row>
