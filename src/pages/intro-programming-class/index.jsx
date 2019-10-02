@@ -39,7 +39,7 @@ const Intro = () => {
             title
           }
         }
-        bannerBg: file(relativePath: { eq: "bg2.jpg" }) {
+        bannerBg: file(relativePath: { eq: "bg-intro.jpg" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
@@ -150,7 +150,7 @@ const Intro = () => {
     {
       key: "1",
       name: "Biaya Registrasi",
-      price: { price: 5000 },
+      price: { price: 50000 },
     },
   ]
 
@@ -226,7 +226,7 @@ const Intro = () => {
                     onClick={handleClickBreadcrumb}
                     href="#tentang-program"
                   >
-                    Tentang Program
+                    Tentang Kelas
                   </Breadcrums.Link>
                 </Breadcrums.Item>
                 <Breadcrums.Item>
@@ -297,13 +297,14 @@ const Intro = () => {
                       <Row type="flex" gutter={60}>
                         <Col sm={12}>
                           <div>
-                            <h4>Tentang Program</h4>
+                            <h4>Tentang Kelas</h4>
                             <p>
-                              Program ini terbuka bagi Anda yang tidak memiliki
-                              latar belakang IT sebelumnya karena Anda akan
-                              belajar coding dari awal melalui modul programming
-                              fundamental, membangun aplikasi Web secara lengkap
-                              dari Front End hingga Back End Development
+                              Kelas Ini terbuka untuk umum. Tidak perlu memiliki
+                              latar belakang IT sebelumnya. Kamu akan belajar
+                              coding dari awal. Dengan mentor yang merupakan
+                              praktisi, kamu akan dibimbing untuk memahami dasar
+                              programming, membangun aplikasi web secara lengkap
+                              mulai dari Back End dan Front End Development
                             </p>
                           </div>
                         </Col>
@@ -332,7 +333,7 @@ const Intro = () => {
                   <Container>
                     <GlobalHeader
                       metaTitle="Kelebihan Kelas"
-                      title="Kelebihan yang akan anda dapatkan dalam kelas ini"
+                      title="Kelas ini berbeda dengan kelas yang lain. Berikut yang akan kamu dapatkan dikelas ini :"
                     />
                     <GlobalSectionContent>
                       <Row type="flex" gutter={60}>
@@ -378,7 +379,7 @@ const Intro = () => {
                               <Flex>
                                 <span>01</span>
                                 <div>
-                                  <h5>Introudction</h5>
+                                  <h5>Introduction</h5>
                                 </div>
                               </Flex>
                             </Step>
@@ -388,7 +389,7 @@ const Intro = () => {
                               {/* <h4>Pengenalan Tentang User Interface</h4> */}
                               <p>
                                 Modul ini memberikan pengetahuan dasar bagaimana
-                                Anda dapat memulai coding dalam bahasa
+                                Kamu dapat memulai coding dalam bahasa
                                 pemrograman apapun. Modul ini menggunakan
                                 Javascript dan python sebagai pilihan bahasa
                                 pemrogramannya untuk mengeksplorasi syntax dari
@@ -425,7 +426,7 @@ const Intro = () => {
                                 Mengenal prinsip-prinsip dalam mendesain UI
                               </h4> */}
                               <p>
-                                Pada modul ini Anda akan belajar bagaimana
+                                Pada modul ini Kamu akan belajar bagaimana
                                 membangun sebuah website yang sederhana dengan
                                 HTML, CSS dan Javascript. HTML digunakan untuk
                                 membuat struktur dari sebuah website, CSS
@@ -436,7 +437,7 @@ const Intro = () => {
                                 animasi.
                               </p>
                               <p>
-                                Setelah Anda menyelesaikan modul ini, Anda akan
+                                Setelah Kamu menyelesaikan modul ini, Kamu akan
                                 memiliki kemampuan untuk membuat sebuah website
                                 yang interaktif.
                               </p>
@@ -464,9 +465,9 @@ const Intro = () => {
                               <p>
                                 Pada modul ini anda akan belajar salah satu
                                 bahasa pemrograman yang populer digunakan
-                                software engineer dalam sebuah perusahaan. Anda
+                                software engineer dalam sebuah perusahaan. Kamu
                                 akan memulai membuat program dalam bahasa
-                                python. Anda akan belajar dari awal sampai anda
+                                python. Kamu akan belajar dari awal sampai anda
                                 dapat memahami bagaimana menggunakan bahasa
                                 python ini dengan mudah dan menyenangkan.
                               </p>
@@ -524,7 +525,7 @@ const Intro = () => {
                                 Diakhir kelas, anda akan kami berikan tantangan
                                 untuk membuat sebuah project akhir untuk melihat
                                 perkembangan anda selama mengikuti kelas ini.
-                                Anda akan diberikan waktu untuk menyelesaikan
+                                Kamu akan diberikan waktu untuk menyelesaikan
                                 project akhir ini dan mempresentasikan project
                                 akhir anda.
                               </p>
@@ -668,7 +669,14 @@ const Intro = () => {
                               <h4 style={{ opacity: 0 }}>Pilih</h4>
                             </DateContent.Head>
                             <DateContent.Content>
-                              <Button type="primary">Daftar</Button>
+                              <Button type="primary">
+                                <a
+                                  href="https://forms.gle/qiLvYUBfMZQRS7WYA"
+                                  taget="__blank"
+                                >
+                                  Daftar
+                                </a>
+                              </Button>
                             </DateContent.Content>
                           </div>
                         </Col>
@@ -701,7 +709,14 @@ const Intro = () => {
                         <Col sm={4} xs={24}>
                           <div>
                             <DateContent.Content>
-                              <Button type="primary">Daftar</Button>
+                              <Button type="primary">
+                                <a
+                                  href="https://forms.gle/qiLvYUBfMZQRS7WYA"
+                                  taget="__blank"
+                                >
+                                  Daftar
+                                </a>
+                              </Button>
                             </DateContent.Content>
                           </div>
                         </Col>
@@ -711,7 +726,11 @@ const Intro = () => {
                           Catat tanggal dan batas waktu pendaftarannya
                           Pendaftaran Kelas :{" "}
                           <span style={{ color: "#333" }}>
-                            Tanggal 3 sampai 16 Oktober 2019
+                            Tanggal{" "}
+                            <span style={{ fontWeight: "bold" }}>3</span> sampai{" "}
+                            <span style={{ fontWeight: "bold" }}>
+                              16 Oktober 2019
+                            </span>
                           </span>
                         </p>
                         <Flex style={{ marginTop: 40 }}>
@@ -719,7 +738,12 @@ const Intro = () => {
                             Untuk info selengkapnya silahkan
                           </span>
                           <Button size="large" type="primary">
-                            Hubungi Kami
+                            <a
+                              href="https://api.whatsapp.com/send?phone=6282199448180"
+                              target="__blank"
+                            >
+                              Hubungi Kami
+                            </a>
                           </Button>
                         </Flex>
                       </div>
@@ -751,8 +775,8 @@ const Intro = () => {
                                 memiliki background IT?
                               </h4>
                               <p>
-                                A: Ya! Program ini terbuka untuk Anda yang tidak
-                                memiliki background IT sebelumnya. Anda akan
+                                A: Ya! Program ini terbuka untuk Kamu yang tidak
+                                memiliki background IT sebelumnya. Kamu akan
                                 diajarkan dari tahapan paling awal yaitu
                                 programming fundamental sehingga program ini
                                 terbuka untuk siapa saja yang tidak memiliki
@@ -765,12 +789,10 @@ const Intro = () => {
                                 mengikuti kelas ini
                               </h4>
                               <p>
-                                A: Ya! Program ini terbuka untuk Anda yang tidak
-                                memiliki background IT sebelumnya. Anda akan
-                                diajarkan dari tahapan paling awal yaitu
-                                programming fundamental sehingga program ini
-                                terbuka untuk siapa saja yang tidak memiliki
-                                background IT.
+                                A : Tidak ada spesifikasi minimal laptop untuk
+                                mengikuti kelas ini. Selama laptopmu dapat
+                                menjalankan browser, code editor, kamu dapat
+                                mengikuti kelas ini.
                               </p>
                             </div>
                             <div style={{ marginBottom: 40 }}>
@@ -779,12 +801,24 @@ const Intro = () => {
                                 mengikuti kelas ini?
                               </h4>
                               <p>
-                                A: Ya! Program ini terbuka untuk Anda yang tidak
-                                memiliki background IT sebelumnya. Anda akan
-                                diajarkan dari tahapan paling awal yaitu
-                                programming fundamental sehingga program ini
-                                terbuka untuk siapa saja yang tidak memiliki
-                                background IT.
+                                Kelas ini terbuka untuk semua. tidak ada batasan
+                                minimal usia. Selama kamu bisa menggunakan
+                                komputer dalam penggunaan sehari-hari, kamu
+                                dapat mengikuti kelas ini
+                              </p>
+                            </div>
+                            <div style={{ marginBottom: 40 }}>
+                              <h4>
+                                Q: Saya tidak bisa membayar langsung biaya
+                                kelas, bagaimana mekanisme cicilan?
+                              </h4>
+                              <p>
+                                A : Biaya untuk kelas ini adalah Rp. 500.000,-.
+                                Jika kamu tidak dapat membayar langsung
+                                sekaligus, kamu dapat membayar dengan metode
+                                cicilan sampai dengan 3 kali pembayaran.
+                                Pertanyaan lebih lanjut, kamu dapat menghubungi
+                                kami di WA +6282199448180
                               </p>
                             </div>
                           </GlobalContentParagraf>
@@ -817,9 +851,11 @@ const Intro = () => {
                 }
               `}
             >
-              <h4>Anda tertarik dengan program intensive kelas kami?</h4>
+              <h4>Kamu tertarik mengikuti kelas ini?</h4>
               <Button size="large" type="primary">
-                Daftar Sekarang
+                <a href="https://forms.gle/qiLvYUBfMZQRS7WYA" target="__blank">
+                  Daftar Sekarang
+                </a>
               </Button>
             </div>
           </Flex>

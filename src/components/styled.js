@@ -261,7 +261,7 @@ export const CalcDiscount = ({ value }) => (
           <PriceSave>(Save {value.discount}%)</PriceSave>
         </div>
         <div>
-          <PriceDiscount>
+          <PriceDiscount style={{ fontWeight: "bold" }}>
             Rp{" "}
             {numeral(value.price - (value.price * value.discount) / 100).format(
               "0,0"
@@ -271,7 +271,9 @@ export const CalcDiscount = ({ value }) => (
       </>
     ) : (
       <div>
-        <PriceDiscount>Rp {numeral(value.price).format("0,0")}</PriceDiscount>
+        <PriceDiscount style={{ fontWeight: "bold" }}>
+          Rp {numeral(value.price).format("0,0")}
+        </PriceDiscount>
       </div>
     )}
   </div>
