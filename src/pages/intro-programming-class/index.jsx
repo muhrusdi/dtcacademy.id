@@ -95,6 +95,7 @@ const Intro = () => {
   }
 
   const handleClickBreadcrumb = e => {
+    console.log(e.target)
     document.getElementById(e.target.hash).scrollIntoView()
   }
 
@@ -469,13 +470,13 @@ const Intro = () => {
                                 Mengenal prinsip-prinsip dalam mendesain UI
                               </h4> */}
                               <p>
-                                Pada modul ini anda akan belajar salah satu
+                                Pada modul ini kamu akan belajar salah satu
                                 bahasa pemrograman yang populer digunakan
                                 software engineer dalam sebuah perusahaan. Kamu
                                 akan memulai membuat program dalam bahasa
                                 python. Kamu akan belajar dari awal sampai anda
                                 dapat memahami bagaimana menggunakan bahasa
-                                python ini dengan mudah dan menyenangkan.
+                                python ini dengan mudah dan menyenangkan
                               </p>
                             </div>
                           </Col>
@@ -500,9 +501,9 @@ const Intro = () => {
                                 Mengenal prinsip-prinsip dalam mendesain UI
                               </h4> */}
                               <p>
-                                pada modul ini, anda akan berkenalan lebih jauh
-                                tentang python dan javascript. Setelah anda
-                                menyelesaikan modul ini, anda diharapkan dapat
+                                pada modul ini, kamu akan berkenalan lebih jauh
+                                tentang python dan javascript. Setelah kamu
+                                menyelesaikan modul ini, kamu diharapkan dapat
                                 memiliki pemahaman dasar tentang 2 bahasa
                                 pemrograman.{" "}
                               </p>
@@ -528,12 +529,12 @@ const Intro = () => {
                                 Mengenal prinsip-prinsip dalam mendesain UI
                               </h4> */}
                               <p>
-                                Diakhir kelas, anda akan kami berikan tantangan
+                                Diakhir kelas, kamu akan kami berikan tantangan
                                 untuk membuat sebuah project akhir untuk melihat
-                                perkembangan anda selama mengikuti kelas ini.
+                                perkembangan kamu selama mengikuti kelas ini.
                                 Kamu akan diberikan waktu untuk menyelesaikan
                                 project akhir ini dan mempresentasikan project
-                                akhir anda.
+                                akhir kamu.
                               </p>
                             </div>
                           </Col>
@@ -641,7 +642,7 @@ const Intro = () => {
                               <h4>Mulai Belajar</h4>
                             </DateContent.Head>
                             <DateContent.Content>
-                              <div>21 Oktobe s/d</div>
+                              <div>21 Oktober s/d</div>
                               <div>15 November 2019</div>
                             </DateContent.Content>
                           </div>
@@ -653,8 +654,8 @@ const Intro = () => {
                             </DateContent.Head>
                             <DateContent.Content>
                               <div>
-                                Senin, Rabu, Jumat (Pukul 19.00 - 21.00) - Kelas
-                                Malam
+                                Senin, Rabu, Jumat (Pukul 19.00 - 21.00) -{" "}
+                                <b>Kelas Malam</b>
                               </div>
                             </DateContent.Content>
                           </div>
@@ -691,7 +692,7 @@ const Intro = () => {
                         <Col sm={6} xs={24}>
                           <div>
                             <DateContent.Content>
-                              <div>21 Oktobe s/d</div>
+                              <div>21 Oktober s/d</div>
                               <div>23 November 2019</div>
                             </DateContent.Content>
                           </div>
@@ -700,7 +701,8 @@ const Intro = () => {
                           <div>
                             <DateContent.Content>
                               <div>
-                                Sabtu, Minggu (Pukul 10.00 - 13.00) - Kelas Pagi
+                                Sabtu, Minggu (Pukul 10.00 - 13.00) -{" "}
+                                <b>Kelas Pagi</b>
                               </div>
                             </DateContent.Content>
                           </div>
