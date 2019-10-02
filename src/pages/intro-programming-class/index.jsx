@@ -39,7 +39,7 @@ const Intro = () => {
             title
           }
         }
-        bannerBg: file(relativePath: { eq: "bg-intro.jpg" }) {
+        bannerBg: file(relativePath: { eq: "bg-intro2.jpg" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
