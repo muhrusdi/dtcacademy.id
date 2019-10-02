@@ -194,7 +194,7 @@ const Intro = () => {
                 }
               `}
             >
-              <h1>Be a UI Designer and Create a great prodccut.</h1>
+              <h1>Be a Front End Developer and Create a great product.</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                 corporis!
@@ -475,7 +475,7 @@ const Intro = () => {
                           <Col sm={8}>
                             <Step>
                               <Flex>
-                                <span>03</span>
+                                <span>04</span>
                                 <div>
                                   <h5>Python and Javascript In Action</h5>
                                 </div>
@@ -503,7 +503,7 @@ const Intro = () => {
                           <Col sm={8}>
                             <Step>
                               <Flex>
-                                <span>04</span>
+                                <span>05</span>
                                 <div>
                                   <h5>Final Project</h5>
                                 </div>

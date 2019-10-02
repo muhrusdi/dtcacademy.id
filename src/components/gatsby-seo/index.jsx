@@ -30,7 +30,7 @@ const SEO = ({
             siteUrl
           }
         }
-        imgThumb: file(relativePath: { eq: "dtc-thumb.jpg" }) {
+        imgThumb: file(relativePath: { eq: "dtc_og.jpg" }) {
           childImageSharp {
             fluid {
               src
