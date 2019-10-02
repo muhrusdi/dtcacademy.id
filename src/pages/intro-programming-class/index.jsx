@@ -588,7 +588,7 @@ const Intro = () => {
                                           tanggal yang ditentukan.
                                         </div>
                                       </div>
-                                      <span>
+                                      <span style={{ fontWeight: "bold" }}>
                                         Rp {numeral(total).format("0,0")}
                                       </span>
                                     </div>
