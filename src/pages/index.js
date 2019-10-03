@@ -194,13 +194,13 @@ const IndexPage = () => {
     return `https://api.telegram.org/bot853006600:AAF-W11ezsyL0_CkCCpRQAfHuYkH-lioQGc/sendMessage?chat_id=@academydtc&text=${text}`
   }
 
-  useEffect(() => {
-    fetch(api("visited"))
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-      })
-  }, [])
+  // useEffect(() => {
+  //   fetch(api("visited"))
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       console.log(data)
+  //     })
+  // }, [])
 
   const handleChange = e => {
     setEmail(e.target.value)
