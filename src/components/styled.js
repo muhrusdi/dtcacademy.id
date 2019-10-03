@@ -83,6 +83,9 @@ export const BackgroundImage = styled(Img)(
       background:
         "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)",
       position: "absolute",
+      "@media (max-width: 576px)": {
+        background: "rgba(0,0,0,0.6)",
+      },
       content: "' '",
       top: 0,
       left: 0,
@@ -179,6 +182,9 @@ export const GlobalHeader = ({ metaTitle, title, desc }) => {
 
 export const GlobalSectionContent = styled.div`
   margin-top: 80px;
+  h4 {
+    line-height: 1.4;
+  }
 `
 export const Flex = styled.div`
   display: flex;
