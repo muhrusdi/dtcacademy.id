@@ -58,13 +58,19 @@ export const BannerContent = styled.div`
     font-size: 18px;
     margin-top: 60px;
   }
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 40px;
-    }
-  }
   button {
     margin-top: 40px;
+  }
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 20px;
+    }
   }
   ${({ children, ...props }) => ({ ...props })}
 `
