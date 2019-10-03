@@ -39,6 +39,11 @@ export const Container = styled.div`
 `
 export const Banner = styled.div`
   height: 100vh;
+  canvas {
+    @media (max-width: 576px) {
+      opacity: 0.2;
+    }
+  }
 `
 export const BannerContent = styled.div`
   height: 100vh;
