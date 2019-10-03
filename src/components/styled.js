@@ -106,9 +106,7 @@ SectionContent.Section = styled.section`
 export const Breadcrums = styled.ul`
   list-style: none;
   @media (max-width: 1315px) {
-    a {
-      visibility: hidden;
-    }
+    display: none;
   }
 `
 Breadcrums.Item = styled.li`
