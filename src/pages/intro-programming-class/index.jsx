@@ -29,6 +29,7 @@ import { css } from "@emotion/core"
 import SEO from "../../components/gatsby-seo"
 import GlobalfooterWrap from "../../components/globalfooter"
 import { discount } from "../../components/utils"
+import Particles from "react-particles-js"
 
 const Intro = () => {
   const data = useStaticQuery(
@@ -121,28 +122,6 @@ const Intro = () => {
     },
   ]
 
-  const columnsTable2 = [
-    {
-      title: "Promo Pendaftaran",
-      dataIndex: "name",
-      key: "name",
-      render: text => (
-        <div>
-          {text.title ? <span>{text.title}</span> : <span>{text}</span>}
-          {text.desc ? <span>{text.desc}</span> : null}
-        </div>
-      ),
-    },
-    {
-      title: "",
-      key: "price",
-      dataIndex: "price",
-      render: value => {
-        return <CalcDiscount value={value} />
-      },
-    },
-  ]
-
   const dataTable = [
     {
       key: "1",
@@ -156,20 +135,6 @@ const Intro = () => {
       key: "1",
       name: "Biaya Registrasi",
       price: { price: 50000 },
-    },
-  ]
-
-  const dataTable2 = [
-    {
-      key: "1",
-      name: "Biaya Kelas (Promo awal)",
-      desc: "Pembayaran dilakukan upgront 100%",
-      price: { price: 1000000, discount: 20 },
-    },
-    {
-      key: "1",
-      name: "Biaya Registrasi",
-      price: { price: 5000 },
     },
   ]
 
@@ -192,6 +157,27 @@ const Intro = () => {
         link="https://forms.gle/qiLvYUBfMZQRS7WYA"
       />
       <Banner>
+        <Particles
+          style={{ position: "absolute", zIndex: 2 }}
+          params={{
+            particles: {
+              number: {
+                value: 50,
+              },
+              size: {
+                value: 3,
+              },
+            },
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+              },
+            },
+          }}
+        />
         <BackgroundImage
           height={"100vh"}
           objectFit
