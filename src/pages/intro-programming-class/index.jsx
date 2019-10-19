@@ -154,6 +154,7 @@ const Intro = () => {
       <Globalnav
         title="Intro Programming Class"
         ref={haederRef}
+        top={80}
         link="https://forms.gle/qiLvYUBfMZQRS7WYA"
       />
       <Banner>
@@ -280,7 +281,7 @@ const Intro = () => {
                   }
                 `}
               >
-                
+
               </Col> */}
           <Col sm={24} md={24} lg={24}>
             <div>

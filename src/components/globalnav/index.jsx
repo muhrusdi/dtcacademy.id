@@ -5,9 +5,9 @@ import { Globalnav, Container, Flex } from "../styled"
 import logoDtc from "../../images/logo-dtc.svg"
 import { Link } from "gatsby"
 
-const GlobalnavWrap = forwardRef(({ title, link = "#" }, ref) => {
+const GlobalnavWrap = forwardRef(({ title, link = "#", top }, ref) => {
   return (
-    <Globalnav ref={ref}>
+    <Globalnav ref={ref} top={top}>
       <Container>
         <Flex justifyContent="space-between" alignItems="center" height={80}>
           <Globalnav.Logo>

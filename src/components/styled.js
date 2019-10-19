@@ -9,7 +9,7 @@ export const Globalnav = styled.nav`
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.9);
-  top: -80px;
+  top: -${({top}) => top}px;
   transition: all 0.3s ease;
   z-index: 999;
 `
