@@ -56,6 +56,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "UA-148181496-1",
