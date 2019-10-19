@@ -3,7 +3,6 @@ path: "outline"
 date: "2019-05-04"
 title: "Table of Contents"
 ---
-
 1. [Introudction](#1.introduction)
 2. [Overview of What Yo'll Be Learning](#2.overview)
 3. [Tools](#3.tools)
@@ -29,11 +28,11 @@ title: "Table of Contents"
 
 ## 1. Introduction
 
-Bagian pertama akan membahas mengenai gambaran seorang web developer dan langkah awal yang harus dilakukan ketika ingin menjadi seorang web developer. Serta memberikan gambaran bagaiman web bekerja.
+Bagian pertama akan membahas mengenai gambaran seorang web developer dan langkah awal yang harus dilakukan ketika ingin menjadi seorang web developer. Serta memberikan gambaran bagaimana web bekerja.
 
 ## 2. Overview of What Yo'll Be Learning
 
-Bagian ini akan menggambarkan apa yang akan dipelajari selama kelas kelas berlangsung dengan beragai tahap dari tahap awal sampai tahap akhir.
+Bagian ini akan menggambarkan apa yang akan dipelajari didalam kelas, dengan beragai tahap, dari tahap awal sampai tahap akhir.
 
 ## 3. Tools
 
@@ -41,7 +40,7 @@ Pada bagian ini sebelum menulis baris kode, terlebih dahulu harus melengkapi too
 
 ## 4. Basic HTML
 
-Bagian kita akan mulai berkenalan dengan HTML dan istilah-istilah yang ada di HTML, bagaimana membangun site web pertama kita menggunakan HTML.
+Bagian ini, kita akan mulai berkenalan dengan HTML dan istilah-istilah yang ada di HTML, bagaimana membangun site web pertama kita dengan HTML.
 
 ## 5. HTML Next Steps
 
@@ -53,7 +52,7 @@ Pada tahap sebelumnya mungkin kita telah menujukkan kepada Anda HTML yang dapat 
 
 ## 7. Basic CSS
 
-Sebelumnya kita telah mengetahui bagaimana membuat elemen HTML di halaman web. Pada bagian akan mengenalkan bagian yang melengkapi HTML yaitu CSS, mengenalkan dasar-dasar CSS, bagaimana memanipulasi HTML menggunakan CSS, mulai warna, ukuran, posisi, animasi dan lain-lain.
+Sebelumnya kita telah mengetahui bagaimana membuat elemen HTML di halaman web. Pada bagian ini akan mengenalkan bagian yang melengkapi HTML yaitu CSS, mengenalkan dasar-dasar CSS, bagaimana memanipulasi HTML menggunakan CSS, mulai warna, ukuran, posisi, animasi dan lain-lain.
 
 ## 8. CSS Selector and the Cascade
 
@@ -65,7 +64,7 @@ Pada bagian ini kita akan mengetahui bagaimana memetakan halaman web dan mengeta
 
 ## 10. Effective Patterns for Writing CSS
 
-Sejauh ini kita telah mengetahu seputar HTML dan CSS. Pada tahap ini kita sudah mulai memikirkan projek pertama kita. Bagaimana HTML dan CSS saling terhubung dalam sebuah projek. Serta memberikan menjelaskan kapang penggunaan istilah Cascade.
+Sejauh ini kita telah mengetahui seputar HTML dan CSS. Pada tahap ini kita sudah mulai memikirkan projek pertama kita. Bagaimana HTML dan CSS saling terhubung dalam sebuah projek. Serta memberikan penjelasa kapang penggunaan istilah Cascade.
 
 ## 11. Project: HTML & CSS
 
@@ -73,15 +72,15 @@ Pada bagian ini kita aka bekerja dengan projek dimana terdapat desain UI yang ak
 
 ## 12. Programming Fundamentals
 
-Sebelumnya mungkin kita hanya bersentuhan dengan bahasa template, pada tahap ini kita akan berkenal dengan bahasa pemrograman yaitu javascript. Mengenalkan dasar javascript mulai dari variable, tipe data, percabangan, perulangan dan lain-lain.
+Sebelumnya mungkin kita hanya bersentuhan dengan bahasa template, pada tahap ini kita akan berkenalan dengan bahasa pemrograman yaitu javascript. Mengenalkan dasar javascript mulai dari variable, tipe data, percabangan, perulangan dan lain-lain.
 
 ## 13. Functions and Scope
 
-Pada bagian ini akan diperkenal istilah yang dapat digunkan untuk membuat kode yang dapat dengan mudah digunakan kembali.
+Pada bagian ini akan diperkenalkan istilah yang dapat digunkan untuk membuat kode yang mana kode tersebut dapat dengan mudah digunakan kembali.
 
 ## 14. Objects dan Arrays
 
-Pada bagian kita mengenalkan isitilah yang dapat digunakan untuk menyimpan data, bagaiman memanipulasi data seperti data beritpe object atau array.
+Pada bagian kita mengenalkan isitilah yang dapat digunakan untuk menyimpan data, bagaimana memanipulasi data seperti data beritpe object atau array.
 
 ## 15. The DOM
 
@@ -93,19 +92,19 @@ Dibagian ini kita akan mengasah kemampuan programming kita dengan bersentuhan de
 
 ## 17. AJAX
 
-Pada bagian ini kita belajar bagaiman berkomunikasi dengan server atau penyedia data atau meminta data dari API.
+Pada bagian ini kita belajar bagaimana berkomunikasi dengan server, mengambil data dari API.
 
 ## 18. Integrating with Other Libraries
 
-Di era sekarang banyak programmer yang mebagikan kode yang sudah mereka buat. Jadi pada tahap ini akan belajar bagaimana mengintegrasikan kode orang lain dalam projek.
+Di era sekarang banyak programmer yang mebagikan kode yang sudah mereka buat. Jadi pada tahap ini kita akan belajar bagaimana mengintegrasikan kode orang lain dalam projek.
 
 ## 19. Git
 
-Pada tahap ini akan berkenalan dengan Git.
+Dibagian ini kita akan berkenalan dengan Git.
 
 ## 20. Deploying Your App
 
-Bagian kita akan mencoba mendeploy projek yang telah dikode sehingga projek dapat diakses secara publik.
+Pada bagian ini kita akan mencoba mendeploy projek yang telah dikoding sehingga projek dapat diakses secara publik.
 
 ## 21. Final Projek
 
