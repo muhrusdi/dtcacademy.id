@@ -45,7 +45,7 @@ const Outline = () => {
         <div
           className="blog-post-content"
           css={css`
-          margin-top: 60px;
+            margin-top: 60px;
             ol {
               margin-bottom: 80px;
             }
@@ -54,6 +54,15 @@ const Outline = () => {
               & + p {
                 margin-bottom: 30px;
               }
+            }
+            ul {
+              & + h2 {
+                margin-top: 30px;
+              }
+            }
+            h2 {
+              font-size: 20px;
+              margin-top: 30px;
             }
             img {
               width: 100%;
