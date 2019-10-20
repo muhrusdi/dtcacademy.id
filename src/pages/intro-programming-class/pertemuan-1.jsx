@@ -60,7 +60,7 @@ const Outline = () => {
                 margin-top: 30px;
               }
             }
-            h2 {
+            h3 {
               font-size: 20px;
               margin-top: 30px;
             }
