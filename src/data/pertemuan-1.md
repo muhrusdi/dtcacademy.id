@@ -53,7 +53,8 @@ Sebelum kita mulai, kita butuh untuk melengkapi tool yang kita butuhkan untuk da
 
 - Browser: Chrome, Firefox.
 - Text Editor: VSCode, Atom, Sublime Text.
-- Terminal/Command Promt
+- Terminal/Command Prompt
+- Git
 
 ## Basic HTML
 
