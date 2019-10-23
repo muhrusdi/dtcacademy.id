@@ -1,3 +1,9 @@
+---
+path: "pertemuan-1"
+date: "2019-05-04"
+title: "Pertemuan #1"
+---
+
 1. [Introudction](#1.introduction)
 2. [Overview of What Yo'll Be Learning](#2.overview)
 3. [Tools](#3.tools)
