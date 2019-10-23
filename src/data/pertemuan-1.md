@@ -1,7 +1,7 @@
 ---
-path: "pertemuan-1"
+path: "pertemuan-2"
 date: "2019-05-04"
-title: "Pertemuan #1"
+title: "Pertemuan #2"
 ---
 
 1. [Introudction](#1.introduction)
