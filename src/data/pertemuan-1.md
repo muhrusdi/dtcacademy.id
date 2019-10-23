@@ -1,7 +1,3 @@
-# Pertemuan #1
-
-
-
 1. [Introudction](#1.introduction)
 2. [Overview of What Yo'll Be Learning](#2.overview)
 3. [Tools](#3.tools)
