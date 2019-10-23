@@ -10,7 +10,7 @@ import { css } from "@emotion/core"
 const Outline = () => {
   const data = useStaticQuery(graphql`
     query {
-    markdownRemark(frontmatter: { path: { eq: "pertemuan-1" } }) {
+    markdownRemark(frontmatter: { path: { eq: "pertemuan-2" } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
