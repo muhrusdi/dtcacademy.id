@@ -21,7 +21,7 @@ Istilah web developer memiliki makna yang lebih umum, sehingga web developer dap
 
 **Frontend web developer** atau umumnya dikenal dengan Frontend developer, yaitu pengembang web yang bertanggung jawab membangun aplikasi web yang berhubungan langsung dengan pengguna, seperti tampilan dari aplikasi web. Apa yang kita lihat dari sebuah halaman web merupakan buah kerja dari seoarng frontend web developer.
 
-**Backend web developer** atau dikenal juga dengan Backend web developer, yaitu pengembang yang memiliki tanggung jawab mengembangkan web yang tidak berhubungan langsung dengan pengguna. Semua kebutuhan sumber daya yang dibutuhkan seorang frontend developer untuk ditampilkan ke pengguna itu semua ditangani oleh bagian Backend web developer.
+**Backend web developer** atau dikenal juga dengan Backend developer, yaitu pengembang yang memiliki tanggung jawab mengembangkan web yang tidak berhubungan langsung dengan pengguna. Semua kebutuhan sumber daya yang dibutuhkan seorang frontend developer untuk ditampilkan ke pengguna itu semua ditangani oleh bagian Backend web developer.
 
 **Fullstack web developer** yaitu seorang pengembang yang memiliki semua keahlian yang telah disebutkan sebelumnya, yaiut frontend developer dan backend developer. Untuk menjadi seoarng fullstack ini tidaklah mudah, karena kita perlu mengetahu apa yang ada dibagian frontend dan backend secara bersamaan.
 
@@ -54,7 +54,7 @@ Sebelum kita mulai, kita butuh untuk melengkapi tool yang kita butuhkan untuk da
 - Browser: Chrome, Firefox.
 - Text Editor: VSCode, Atom, Sublime Text.
 - Terminal/Command Prompt
-- Git
+- Git: Github, Gitlab
 
 ## Basic HTML
 
