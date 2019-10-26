@@ -155,6 +155,7 @@ const SEO = ({
         },
       ].concat(meta)}
     >
+      <meta name="google-site-verification" content="3WaIC9EW6MCXjcxZYeuoJWCIzfI-7RFc_xy1HhClVSc" />
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgJSONLD)}
       </script>
