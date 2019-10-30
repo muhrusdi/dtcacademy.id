@@ -4,6 +4,7 @@ date: "2019-05-04"
 title: "Pertemuan #4"
 ---
 
+
 # Programming Fundamental
 
 # Intro Javascript
@@ -92,9 +93,9 @@ Kita dapat menulis komentar di javascript dengan dua cara
 
 Variable adalah sebuah literal yang di `assign`/simpan ke sebuah identifier yang dapat kemudian dipanggil didalam sebuah program.
 
-### Using `var`
+### Menggunakan `var`
 
-var a = 0
+`var a = 0`
 
 Jika kita lupa menambahkan `var` di variable yang telah di assign sebuah nilai, maka nilai tersebut kita assign ke variable yang tidak terdeklarasi.
 Ketika membuat sebuah varibale yang tidak terassign sebuah value, maka nilainya menjadi `undefined`.
@@ -105,7 +106,7 @@ Selain `var`, kita dapat menggunakan `const` dan `let`.
 
 ### Primitive type
 
-Tipe-tipe primitive yaiut:
+Tipe-tipe primitive yaitu:
 
   - Number (float, integer)
   - String (template string)
@@ -280,7 +281,6 @@ link.addEventListener('click', event => {
 // link clicked
 })
 ```
-
 
 
 
