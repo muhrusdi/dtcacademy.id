@@ -5,7 +5,7 @@ import { Globalnav, Container, Flex } from "../styled"
 import logoDtc from "../../images/logo-dtc.svg"
 import { Link } from "gatsby"
 
-const GlobalnavWrap = forwardRef(({ title, link = "#", top }, ref) => {
+const GlobalnavWrap = forwardRef(({ title, link = "#", top, color }, ref) => {
   return (
     <Globalnav ref={ref} top={top}>
       <Container>
@@ -29,7 +29,7 @@ const GlobalnavWrap = forwardRef(({ title, link = "#", top }, ref) => {
             </Flex>
           </Globalnav.Logo>
           <div>
-            <Button size="large" type="primary">
+            <Button size="large" type="primary" style={{background: color, border: `1px solid ${color}`}}>
               <a href={link} target="__blank">
                 Daftar Sekarang
               </a>

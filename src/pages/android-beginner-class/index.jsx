@@ -32,6 +32,9 @@ import { discount } from "../../components/utils"
 import Particles from "react-particles-js"
 
 const Intro = () => {
+  const [theme] = useState({
+    colorPrimary: "#35db85",
+  })
   const data = useStaticQuery(
     graphql`
       query {
@@ -117,7 +120,7 @@ const Intro = () => {
       key: "price",
       dataIndex: "price",
       render: value => {
-        return <CalcDiscount value={value} />
+        return <CalcDiscount color={theme.colorPrimary} value={value} />
       },
     },
   ]
@@ -155,6 +158,7 @@ const Intro = () => {
         title="Android Beginner Class - DTC Academy"
         ref={haederRef}
         top={80}
+        color={theme.colorPrimary}
         link="https://forms.gle/qiLvYUBfMZQRS7WYA"
       />
       <Banner>
@@ -198,7 +202,7 @@ const Intro = () => {
                 Belajar Android dari dasar dengan mentor berpengalaman dan kembangkan keterampilan Kamu sebagai Android Developer. Kelas ini merupakan kelas pemula.
 
               </p>
-              <GlobalButton type="primary" onClick={clickToJadwal}>
+              <GlobalButton background={theme.colorPrimary} border={`1px solid ${theme.colorPrimary}`} type="primary" onClick={clickToJadwal}>
                 Lihat Jadwal
               </GlobalButton>
             </div>
@@ -403,7 +407,7 @@ const Intro = () => {
                       <GlobalSectionContentItem>
                         <Row type="flex" gutter={60}>
                           <Col sm={8}>
-                            <Step>
+                            <Step color={theme.colorPrimary}>
                               <Flex>
                                 <span>01</span>
                                 <div>
@@ -426,7 +430,7 @@ const Intro = () => {
                       <GlobalSectionContentItem>
                         <Row type="flex" gutter={60}>
                           <Col sm={8}>
-                            <Step>
+                            <Step color={theme.colorPrimary}>
                               <Flex>
                                 <span>02</span>
                                 <div>
@@ -450,7 +454,7 @@ const Intro = () => {
                       <GlobalSectionContentItem>
                         <Row type="flex" gutter={60}>
                           <Col sm={8}>
-                            <Step>
+                            <Step color={theme.colorPrimary}>
                               <Flex>
                                 <span>03</span>
                                 <div>
@@ -475,7 +479,7 @@ const Intro = () => {
                       <GlobalSectionContentItem>
                         <Row type="flex" gutter={60}>
                           <Col sm={8}>
-                            <Step>
+                            <Step color={theme.colorPrimary}>
                               <Flex>
                                 <span>04</span>
                                 <div>
@@ -499,7 +503,7 @@ const Intro = () => {
                       <GlobalSectionContentItem>
                         <Row type="flex" gutter={60}>
                           <Col sm={8}>
-                            <Step>
+                            <Step color={theme.colorPrimary}>
                               <Flex>
                                 <span>05</span>
                                 <div>
@@ -537,7 +541,7 @@ const Intro = () => {
                       <Row type="flex" gutter={60} justify="end">
                         <Col sm={23} xs={24}>
                           <div>
-                            <TableSection>
+                            <TableSection color={theme.colorPrimary}>
                               <Table
                                 columns={columnsTable}
                                 dataSource={dataTable}
@@ -618,7 +622,7 @@ const Intro = () => {
                       <Row type="flex">
                         <Col sm={6} xs={24}>
                           <div>
-                            <DateContent.Head>
+                            <DateContent.Head color={theme.colorPrimary}>
                               <h4>Mulai Belajar</h4>
                             </DateContent.Head>
                             <DateContent.Content>
@@ -629,7 +633,7 @@ const Intro = () => {
                         </Col>
                         <Col sm={8} xs={24}>
                           <div>
-                            <DateContent.Head>
+                            <DateContent.Head color={theme.colorPrimary}>
                               <h4>Hari dan Waktu</h4>
                             </DateContent.Head>
                             <DateContent.Content>
@@ -641,7 +645,7 @@ const Intro = () => {
                         </Col>
                         <Col sm={6} xs={24}>
                           <div>
-                            <DateContent.Head>
+                            <DateContent.Head color={theme.colorPrimary}>
                               <h4>Lokasi</h4>
                             </DateContent.Head>
                             <DateContent.Content>
@@ -655,7 +659,7 @@ const Intro = () => {
                               <h4 style={{ opacity: 0 }}>Pilih</h4>
                             </DateContent.Head>
                             <DateContent.Content>
-                              <Button type="primary">
+                              <Button type="primary" style={{background: theme.colorPrimary, border: `1px solid ${theme.colorPrimary}`}}>
                                 <a
                                   href="https://forms.gle/qiLvYUBfMZQRS7WYA"
                                   taget="__blank"
@@ -683,7 +687,7 @@ const Intro = () => {
                           <span style={{ marginRight: 20 }}>
                             Untuk info selengkapnya silahkan
                           </span>
-                          <Button size="large" type="primary">
+                          <Button size="large" type="primary" style={{background: theme.colorPrimary, border: `1px solid ${theme.colorPrimary}`}}>
                             <a
                               href="https://api.whatsapp.com/send?phone=6282199448180"
                               target="__blank"
@@ -786,7 +790,7 @@ const Intro = () => {
               `}
             >
               <h4>Kamu tertarik mengikuti kelas ini?</h4>
-              <Button size="large" type="primary">
+              <Button size="large" type="primary" style={{background: theme.colorPrimary, border: `1px solid ${theme.colorPrimary}`}}>
                 <a href="https://forms.gle/qiLvYUBfMZQRS7WYA" target="__blank">
                   Daftar Sekarang
                 </a>

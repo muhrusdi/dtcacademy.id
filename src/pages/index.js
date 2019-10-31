@@ -299,10 +299,10 @@ const IndexPage = () => {
                   top: 10px;
                 }
                 padding: 4px 10px;
-                background: #d1ecfc;
+                background: #b5ffd9;
                 border-radius: 8px;
-                border: 1px solid #4acbfd;
-                color: #0a749c;
+                border: 1px solid #02984a;
+                color: #02984a;
               `}
             >
               <span>

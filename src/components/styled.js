@@ -224,7 +224,7 @@ export const Step = styled.div`
     flex: none;
     width: 80px;
     height: 80px;
-    background: #589ee8;
+    background: ${({color = "#589ee8"}) => color};
     border-radius: 50%;
     text-align: center;
     margin-right: 20px;
@@ -254,7 +254,7 @@ export const PriceNormal = styled.span`
   margin-right: 10px;
 `
 export const PriceDiscount = styled.span`
-  color: #589ee8;
+  color: ${({color}) => color};
 `
 export const PriceSave = styled.span`
   color: #f58624;
@@ -263,11 +263,11 @@ export const PriceSave = styled.span`
 export const TableSection = styled.div`
   margin-bottom: 60px;
   .ant-table-column-title {
-    color: #61a3e9;
+    color: ${({color}) => color};
     font-weight: bold;
   }
 `
-export const CalcDiscount = ({ value }) => (
+export const CalcDiscount = ({ value, color }) => (
   <div style={{ textAlign: "right" }}>
     {value.discount ? (
       <>
@@ -276,7 +276,7 @@ export const CalcDiscount = ({ value }) => (
           <PriceSave>(Save {value.discount}%)</PriceSave>
         </div>
         <div>
-          <PriceDiscount style={{ fontWeight: "bold" }}>
+          <PriceDiscount color={color} style={{ fontWeight: "bold" }}>
             Rp{" "}
             {numeral(value.price - (value.price * value.discount) / 100).format(
               "0,0"
@@ -286,7 +286,7 @@ export const CalcDiscount = ({ value }) => (
       </>
     ) : (
       <div>
-        <PriceDiscount style={{ fontWeight: "bold" }}>
+        <PriceDiscount color={color} style={{ fontWeight: "bold" }}>
           Rp {numeral(value.price).format("0,0")}
         </PriceDiscount>
       </div>
@@ -310,7 +310,7 @@ DateContent.Head = styled.div`
   padding: 20px;
   h4 {
     margin: 0;
-    color: #61a3e9;
+    color: ${({color}) => color};
   }
 `
 DateContent.Content = styled.div`
