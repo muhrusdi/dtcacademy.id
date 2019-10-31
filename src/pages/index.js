@@ -306,9 +306,8 @@ const IndexPage = () => {
               `}
             >
               <span>
-                <span style={{ fontWeight: "bold" }}>New</span> Class Intro
-                Programming. Daftar segera -{" "}
-                <Link to="/intro-programming-class">selengkapnya</Link>
+                <span style={{ fontWeight: "bold" }}>New</span> Android Beginner Class. Daftar segera -{" "}
+                <Link to="/android-beginner-class">selengkapnya</Link>
               </span>
             </div>
             <Logo>
