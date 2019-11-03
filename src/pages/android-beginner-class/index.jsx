@@ -158,7 +158,7 @@ const Intro = () => {
         description="Start your career as an Android Developer with Android Beginner Class"
       />
       <Globalnav
-        title="Android Beginner Class - DTC Academy"
+        title="Android Beginner Class"
         ref={haederRef}
         top={80}
         color={theme.colorPrimary}
