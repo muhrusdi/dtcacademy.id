@@ -129,7 +129,7 @@ const Intro = () => {
     {
       key: "1",
       name: {
-        title: "Biaya Spesial",
+        title: "Penawaran Khusus",
         desc: "untuk academia yang mendaftar dan melunasi sampai 7 Nov 2019",
       },
       price: { price: 1600000, discount: 65 },
@@ -137,7 +137,7 @@ const Intro = () => {
     {
       key: "2",
       name: {
-        title: "Biaya Normal",
+        title: "Harga Spesial",
         desc: "untuk academia yang mendaftar dari tanggal 8 Nov - 15 Nov 2019",
       },
       price: { price: 1600000, discount: 50 },
