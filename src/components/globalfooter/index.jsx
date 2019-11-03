@@ -32,7 +32,7 @@ const GlobalfooterWrap = ({ data }) => {
                   <span>Kelas</span>
                 </li>
                 <li>
-                  <Link to="/ui-design-class">UI / UX</Link>
+                  <Link to="/android-beginner-class">Andoid Beginner Class</Link>
                 </li>
                 <li>
                   <Link to="intro-programming-class">Frontend Developer</Link>
@@ -53,7 +53,7 @@ const GlobalfooterWrap = ({ data }) => {
                   <span>Makassar, Indonesia</span>
                 </li>
                 <li>
-                  <span>info@dtcacademy.co.id</span>
+                  <span>info@dtcacademy.id</span>
                 </li>
               </Globalfooter.List>
             </div>
