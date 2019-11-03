@@ -611,7 +611,7 @@ const Intro = () => {
                             </DateContent.Head>
                             <DateContent.Content>
                               <div>
-                                Sabtu dan Minggu
+                                Sabtu dan Minggu - Pukul 10 WITA - Selesai
                               </div>
                             </DateContent.Content>
                           </div>
@@ -622,7 +622,7 @@ const Intro = () => {
                               <h4>Lokasi</h4>
                             </DateContent.Head>
                             <DateContent.Content>
-                              <div>DTC Academy (Jl. Hertasning 1 No. 30)</div>
+                              <div>DTC Academy (Jl. Hertasning 1 No. 30 Tidung Makassar)</div>
                             </DateContent.Content>
                           </div>
                         </Col>
