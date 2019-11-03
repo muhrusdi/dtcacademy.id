@@ -35,7 +35,7 @@ const GlobalfooterWrap = ({ data }) => {
                   <Link to="/android-beginner-class">Andoid Beginner Class</Link>
                 </li>
                 <li>
-                  <Link to="intro-programming-class">Frontend Developer</Link>
+                  <Link to="/intro-programming-class">Frontend Developer</Link>
                 </li>
               </Globalfooter.List>
             </div>
