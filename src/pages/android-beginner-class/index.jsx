@@ -129,15 +129,18 @@ const Intro = () => {
     {
       key: "1",
       name: {
-        title: "Biaya Kelas",
-        desc: "Pembayaran dilakukan upfront 100%",
+        title: "Biaya Spesial",
+        desc: "untuk academia yang mendaftar dan melunasi sampai 7 Nov 2019",
       },
-      price: { price: 1000000, discount: 50 },
+      price: { price: 1600000, discount: 65 },
     },
     {
-      key: "1",
-      name: "Biaya Registrasi",
-      price: { price: 50000 },
+      key: "2",
+      name: {
+        title: "Biaya Normal",
+        desc: "untuk academia yang mendaftar dari tanggal 8 Nov - 15 Nov 2019",
+      },
+      price: { price: 1600000, discount: 50 },
     },
   ]
 
@@ -152,14 +155,14 @@ const Intro = () => {
     <>
       <SEO
         title="Android Beginner Class - DTC Academy"
-        description="Become an Android Developer with Android Beginner Class"
+        description="Start your career as an Android Developer with Android Beginner Class"
       />
       <Globalnav
         title="Android Beginner Class - DTC Academy"
         ref={haederRef}
         top={80}
         color={theme.colorPrimary}
-        link="https://forms.gle/qiLvYUBfMZQRS7WYA"
+        link="https://forms.gle/Swrbz9QA4LYnnEmPA"
       />
       <Banner>
         <Particles
@@ -197,7 +200,7 @@ const Intro = () => {
                 }
               `}
             >
-              <h1>Become an Android Developer with Android Beginner Class</h1>
+              <h1>Start your career as an Android Developer with Android Beginner Class</h1>
               <p>
                 Belajar Android dari dasar dengan mentor berpengalaman dan kembangkan keterampilan Kamu sebagai Android Developer. Kelas ini merupakan kelas pemula.
 
@@ -237,6 +240,14 @@ const Intro = () => {
                     href="#peluang-karir"
                   >
                     Kelebihan Kelas
+                  </Breadcrums.Link>
+                </Breadcrums.Item>
+                <Breadcrums.Item>
+                  <Breadcrums.Link
+                    onClick={handleClickBreadcrumb}
+                    href="#persiapan"
+                  >
+                    Persiapan
                   </Breadcrums.Link>
                 </Breadcrums.Item>
                 <Breadcrums.Item>
@@ -361,7 +372,7 @@ const Intro = () => {
 
               <InView key={2} onChange={handleChange}>
                 <SectionContent.Section
-                  id="#peluang-karir"
+                  id="#persiapan"
                   style={{
                     background: "#f5f5f5",
                   }}
@@ -546,45 +557,7 @@ const Intro = () => {
                                 columns={columnsTable}
                                 dataSource={dataTable}
                                 pagination={{ position: "none" }}
-                                footer={() => {
-                                  let total = 0
-                                  dataTable.map(item => {
-                                    total += discount(item)
-                                  })
-                                  return (
-                                    <div
-                                      style={{
-                                        display: "flex",
-                                        justifyContent: "space-between",
-                                      }}
-                                    >
-                                      <div style={{ width: "50%" }}>
-                                        <div
-                                          style={{
-                                            fontSize: 16,
-                                            color: "#333",
-                                          }}
-                                        >
-                                          Total Biaya
-                                        </div>
-                                        <div
-                                          style={{
-                                            fontSize: 14,
-                                            marginTop: 10,
-                                            color: "#bfbfbf",
-                                          }}
-                                        >
-                                          Promo ini hanya terbatas untuk 15
-                                          pendaftar pertama sampai dengan
-                                          tanggal yang ditentukan.
-                                        </div>
-                                      </div>
-                                      <span style={{ fontWeight: "bold" }}>
-                                        Rp {numeral(total).format("0,0")}
-                                      </span>
-                                    </div>
-                                  )
-                                }}
+
                               />
                             </TableSection>
                             <div
@@ -614,8 +587,8 @@ const Intro = () => {
                   <Container>
                     <GlobalHeader
                       metaTitle="Jadwal"
-                      title="Jadwal Kelas Intro Programming"
-                      desc="Silakan pilih jadwal kelas yang cocok dengan kamu"
+                      title="Jadwal Android Beginner Class"
+                      desc=""
                     />
 
                     <GlobalSectionContent>
@@ -638,7 +611,7 @@ const Intro = () => {
                             </DateContent.Head>
                             <DateContent.Content>
                               <div>
-                                Sabtu dan Mingg
+                                Sabtu dan Minggu
                               </div>
                             </DateContent.Content>
                           </div>
@@ -661,7 +634,7 @@ const Intro = () => {
                             <DateContent.Content>
                               <Button type="primary" style={{background: theme.colorPrimary, border: `1px solid ${theme.colorPrimary}`}}>
                                 <a
-                                  href="https://forms.gle/qiLvYUBfMZQRS7WYA"
+                                  href="https://forms.gle/Swrbz9QA4LYnnEmPA"
                                   taget="__blank"
                                 >
                                   Daftar
@@ -673,13 +646,12 @@ const Intro = () => {
                       </Row>
                       <div style={{ marginTop: 60 }}>
                         <p style={{ color: "#bfbfbf" }}>
-                          Catat tanggal dan batas waktu pendaftarannya
-                          Pendaftaran Kelas :{" "}
+
                           <span style={{ color: "#333" }}>
-                            Tanggal{" "}
-                            <span style={{ fontWeight: "bold" }}>3</span> sampai{" "}
+                            Batas akhir pendaftaran
+                            <span style={{ fontWeight: "bold" }}></span> sampai{" "}
                             <span style={{ fontWeight: "bold" }}>
-                              16 Oktober 2019
+                              15 November 2019
                             </span>
                           </span>
                         </p>
@@ -756,7 +728,7 @@ const Intro = () => {
                                 Q: Saya tidak bisa membayar langsung biaya kelas. Bagaimana mekanisme cicilan?
                               </h4>
                               <p>
-                                A : Biaya untuk kelas ini memiliki dua harga yang berbeda yakni Rp. 57650.000,-, dan Rp. 800.000,-.  Jika kamu tidak dapat membayar langsung sekaligus, kamu dapat membayar dengan metode cicilan sampai dengan 3 kali pembayaran. Pertanyaan lebih lanjut, kamu dapat menghubungi kami.
+                                A : Biaya untuk kelas ini memiliki dua harga yang berbeda yakni Rp. 560.000,-, dan Rp. 800.000,-.  Jika kamu tidak dapat membayar langsung sekaligus, kamu dapat membayar dengan metode cicilan sampai dengan 3 kali pembayaran. Pertanyaan lebih lanjut, kamu dapat menghubungi kami.
                               </p>
                             </div>
                           </GlobalContentParagraf>
@@ -772,6 +744,33 @@ const Intro = () => {
         {/* </Container> */}
         {/* </SectionContent.Section> */}
       </SectionContent>
+      <GlobalSection
+        css={css`
+          position: relative;
+          background: #fff;
+        `}
+      >
+        <Container>
+          <div
+          style={{ textAlign: "center" }}
+              css={css`
+                position: relative;
+                z-index: 10;
+                max-width: 80%;
+                margin: 0 auto;
+                h4 {
+                  color: #333;
+                }
+                @media (min-wdith: 576px) {
+                  width: 50%;
+                }
+              `}
+          >
+            <h4>Hubungi Kami</h4>
+            <p>Untuk informasi lebih lanjut atau memiliki pertanyaan silahkan hubungi kami (WA :  085218353202 atau melalui social media di instagram @dtcacademy)</p>
+          </div>
+        </Container>
+      </GlobalSection>
       <GlobalSection
         css={css`
           position: relative;
