@@ -380,7 +380,7 @@ const Intro = () => {
                   <Container>
                     <GlobalHeader
                       metaTitle="Persiapan"
-                      title="Untuk mengikuti kelas ini, Kamu perlu memiliki kemampuan atau beberapa hal. Namun bukan berarti menjadi batasan, adapun hal - hal tersebut sebagai berikut :
+                      title="Untuk mengikuti kelas ini, Kamu perlu memiliki kemampuan atau beberapa hal. Namun bukan berarti menjadi batasan untuk tidak mengikuti kelas ini, adapun hal - hal tersebut sebagai berikut :
 
 "
                     />
@@ -389,13 +389,12 @@ const Intro = () => {
                         <Col sm={24}>
                           <div>
                             <ul>
-                              <li>Diharapkan memiliki latar belakang dan pengalaman menggunakan bahasa Java dan Pemrograman Berorientasi Objek</li>
-                              <li>Perangkat mandiri seperti smartphone Android, dan Laptop. Rekomendasi spesifikasi laptop dengan RAM min 8 GB, CPU (Processor) min Core i5</li>
-                              <li>16 Pertemuan eksklusif</li>
-                              <li>
-                                Kemauan belajar yang kuat serta berkomitmen
-                              </li>
+                              <li>Kemauan belajar yang kuat serta berkomitmen untuk menyelesaikan kelas</li>
                               <li>Sebaik apapun pembelajaran yang diberikan, penentu keberhasilan tetap ada pada diri Kamu. Percaya diri, keseriusan belajar, dan mencoba memperbanyak pengalaman.</li>
+                              <li>Diharapkan memiliki latar belakang dan pengalaman menggunakan bahasa Java dan Pemrograman Berorientasi Objek</li>
+                              <li>
+                                Perangkat mandiri seperti smartphone Android, dan Laptop. Rekomendasi spesifikasi laptop dengan RAM min 8 GB, CPU (Processor) min Core i5
+                              </li>
                             </ul>
                           </div>
                         </Col>
