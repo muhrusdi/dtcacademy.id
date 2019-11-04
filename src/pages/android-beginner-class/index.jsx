@@ -162,7 +162,7 @@ const Intro = () => {
         ref={haederRef}
         top={80}
         color={theme.colorPrimary}
-        link="https://forms.gle/Swrbz9QA4LYnnEmPA"
+        link="https://forms.gle/rgv2KdjrZCUtKBVu8"
       />
       <Banner>
         <Particles
@@ -633,7 +633,7 @@ const Intro = () => {
                             <DateContent.Content>
                               <Button type="primary" style={{background: theme.colorPrimary, border: `1px solid ${theme.colorPrimary}`}}>
                                 <a
-                                  href="https://forms.gle/Swrbz9QA4LYnnEmPA"
+                                  href="https://forms.gle/rgv2KdjrZCUtKBVu8"
                                   taget="__blank"
                                 >
                                   Daftar
@@ -821,7 +821,7 @@ const Intro = () => {
             >
               <h4>Kamu tertarik mengikuti kelas ini?</h4>
               <Button size="large" type="primary" style={{background: theme.colorPrimary, border: `1px solid ${theme.colorPrimary}`}}>
-                <a href="https://forms.gle/Swrbz9QA4LYnnEmPA" target="__blank">
+                <a href="https://forms.gle/rgv2KdjrZCUtKBVu8" target="__blank">
                   Daftar Sekarang
                 </a>
               </Button>
