@@ -43,7 +43,9 @@ const SEO = ({
   )
 
   const metaTitle = title ? title : site.siteMetadata.title
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description
+    ? description
+    : site.siteMetadata.description
   const ogImage = image
     ? site.siteMetadata.siteUrl + image
     : site.siteMetadata.siteUrl + imgThumb.childImageSharp.fluid.src
