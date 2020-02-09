@@ -62,6 +62,14 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: `lgkdt58c526w`,
+    //     // Learn about environment variables: https://gatsby.dev/env-vars
+    //     accessToken: "9hpcEjnQgWX88kytIGyFTp24enKPj6e_LW5nOAmaclc",
+    //   },
+    // },
     `gatsby-transformer-remark`,
     {
       resolve: "gatsby-plugin-google-tagmanager",
