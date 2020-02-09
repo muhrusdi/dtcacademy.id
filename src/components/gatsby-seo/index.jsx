@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import "../../styles/styles.css"
 
 const SEO = ({
   description,
@@ -155,7 +156,10 @@ const SEO = ({
         },
       ].concat(meta)}
     >
-      <meta name="google-site-verification" content="3WaIC9EW6MCXjcxZYeuoJWCIzfI-7RFc_xy1HhClVSc" />
+      <meta
+        name="google-site-verification"
+        content="3WaIC9EW6MCXjcxZYeuoJWCIzfI-7RFc_xy1HhClVSc"
+      />
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgJSONLD)}
       </script>
