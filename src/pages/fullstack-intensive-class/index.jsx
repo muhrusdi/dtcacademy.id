@@ -129,7 +129,7 @@ const Fullstack = () => {
         title: "Biaya Kelas",
         desc: "Pembayaran dilakukan upfront 100%",
       },
-      price: { price: 1000000, discount: 50 },
+      price: { price: 7499999, discount: 60 },
     },
     {
       key: "1",
