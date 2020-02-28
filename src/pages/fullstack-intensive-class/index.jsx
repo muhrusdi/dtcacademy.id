@@ -131,11 +131,6 @@ const Fullstack = () => {
       },
       price: { price: 7499999, discount: 60 },
     },
-    {
-      key: "1",
-      name: "Biaya Registrasi",
-      price: { price: 50000 },
-    },
   ]
 
   const handleChange = (inView, entry) => {
@@ -311,11 +306,14 @@ const Fullstack = () => {
                           <div>
                             <h4>Program Output</h4>
                             <p>
-                              Kamu dapat menggunakan aplikasi management tool,
-                              merancang dan membangun tampilan situs web dari
-                              sisi frontend, membuat dan menggunakan API web
-                              yang didukung database, serta mengamankan dan
-                              mengelola otentikasi dari sisi backend.
+                              Setelah mengikuti program ini kalian yang dari
+                              seorang pemula bisa menjadi seorang fullstack
+                              developer yang dapat merancang dan membangun
+                              website profesional kalian sendiri. Dengan
+                              menguasai berbagai skill teknis dan softskill dari
+                              program ini kalian sudah siap untuk bekerja secara
+                              kolaboratif untuk menginplementasikannya dalam
+                              proyek kerja nyata
                             </p>
                           </div>
                         </Col>
@@ -619,7 +617,7 @@ const Fullstack = () => {
 
                               <ul>
                                 <li>Pembayaran Langsung</li>
-                                <li>Cicilan (Sampai 3 kali pembayaran)</li>
+                                <li>Cicilan</li>
                               </ul>
                             </div>
                           </div>
@@ -647,8 +645,8 @@ const Fullstack = () => {
                               <h4>Mulai Belajar</h4>
                             </DateContent.Head>
                             <DateContent.Content>
-                              <div>21 Oktober s/d</div>
-                              <div>15 November 2019</div>
+                              <div> 1 April 2020 s/d</div>
+                              <div>1 Agustus 2020</div>
                             </DateContent.Content>
                           </div>
                         </Col>
@@ -658,10 +656,7 @@ const Fullstack = () => {
                               <h4>Hari dan Waktu</h4>
                             </DateContent.Head>
                             <DateContent.Content>
-                              <div>
-                                Senin, Rabu, Jumat (Pukul 19.00 - 21.00) -{" "}
-                                <b>Kelas Malam</b>
-                              </div>
+                              <div>Senin - Jumat (Pukul 10.00 - 17.00)</div>
                             </DateContent.Content>
                           </div>
                         </Col>
@@ -683,48 +678,7 @@ const Fullstack = () => {
                             <DateContent.Content>
                               <Button type="primary">
                                 <a
-                                  href="https://forms.gle/qiLvYUBfMZQRS7WYA"
-                                  taget="__blank"
-                                >
-                                  Daftar
-                                </a>
-                              </Button>
-                            </DateContent.Content>
-                          </div>
-                        </Col>
-                      </Row>
-                      <Row type="flex">
-                        <Col sm={6} xs={24}>
-                          <div>
-                            <DateContent.Content>
-                              <div>21 Oktober s/d</div>
-                              <div>23 November 2019</div>
-                            </DateContent.Content>
-                          </div>
-                        </Col>
-                        <Col sm={8} xs={24}>
-                          <div>
-                            <DateContent.Content>
-                              <div>
-                                Sabtu, Minggu (Pukul 10.00 - 13.00) -{" "}
-                                <b>Kelas Pagi</b>
-                              </div>
-                            </DateContent.Content>
-                          </div>
-                        </Col>
-                        <Col sm={6} xs={24}>
-                          <div>
-                            <DateContent.Content>
-                              <div>DTC Academy (Jl. Hertasning 1 No. 30)</div>
-                            </DateContent.Content>
-                          </div>
-                        </Col>
-                        <Col sm={4} xs={24}>
-                          <div>
-                            <DateContent.Content>
-                              <Button type="primary">
-                                <a
-                                  href="https://forms.gle/qiLvYUBfMZQRS7WYA"
+                                  href="https://docs.google.com/forms/d/1dpLZYHaBL7_f_qeBLenRqjFowljAH1CNxk4epMeUQ34/edit?usp=sharing"
                                   taget="__blank"
                                 >
                                   Daftar
@@ -740,9 +694,12 @@ const Fullstack = () => {
                           Pendaftaran Kelas :{" "}
                           <span style={{ color: "#333" }}>
                             Tanggal{" "}
-                            <span style={{ fontWeight: "bold" }}>3</span> sampai{" "}
                             <span style={{ fontWeight: "bold" }}>
-                              16 Oktober 2019
+                              24 Februari
+                            </span>{" "}
+                            sampai{" "}
+                            <span style={{ fontWeight: "bold" }}>
+                              24 Maret 2020
                             </span>
                           </span>
                         </p>
