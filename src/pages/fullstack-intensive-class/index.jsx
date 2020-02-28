@@ -150,7 +150,7 @@ const Fullstack = () => {
         title="Fullstack Developer Intensive Class"
         ref={haederRef}
         top={80}
-        link="https://forms.gle/qiLvYUBfMZQRS7WYA"
+        link="https://docs.google.com/forms/d/1dpLZYHaBL7_f_qeBLenRqjFowljAH1CNxk4epMeUQ34/edit?usp=sharing"
       />
       <Banner>
         <Particles
@@ -905,7 +905,10 @@ const Fullstack = () => {
             >
               <h4>Kamu tertarik mengikuti kelas ini?</h4>
               <Button size="large" type="primary">
-                <a href="https://forms.gle/qiLvYUBfMZQRS7WYA" target="__blank">
+                <a
+                  href="https://docs.google.com/forms/d/1dpLZYHaBL7_f_qeBLenRqjFowljAH1CNxk4epMeUQ34/edit?usp=sharing"
+                  target="__blank"
+                >
                   Daftar Sekarang
                 </a>
               </Button>
