@@ -593,9 +593,9 @@ const Fullstack = () => {
                                             color: "#bfbfbf",
                                           }}
                                         >
-                                          Promo ini hanya terbatas untuk 15
+                                          Promo ini hanya terbatas untuk 5 orang
                                           pendaftar pertama sampai dengan
-                                          tanggal yang ditentukan.
+                                          tanggal yang ditentukan
                                         </div>
                                       </div>
                                       <span style={{ fontWeight: "bold" }}>
@@ -691,6 +691,7 @@ const Fullstack = () => {
                       <div style={{ marginTop: 60 }}>
                         <p style={{ color: "#bfbfbf" }}>
                           Catat tanggal dan batas waktu pendaftarannya
+                          <br />
                           Pendaftaran Kelas :{" "}
                           <span style={{ color: "#333" }}>
                             Tanggal{" "}
@@ -741,54 +742,23 @@ const Fullstack = () => {
                           <GlobalContentParagraf>
                             <div style={{ marginBottom: 40 }}>
                               <h4>
-                                Q : Apakah program ini terbuka bagi yang tidak
-                                memiliki background IT?
-                              </h4>
-                              <p>
-                                A: Ya! Program ini terbuka untuk Kamu yang tidak
-                                memiliki background IT sebelumnya. Kamu akan
-                                diajarkan dari tahapan paling awal yaitu
-                                programming fundamental sehingga program ini
-                                terbuka untuk siapa saja yang tidak memiliki
-                                background IT.
-                              </p>
-                            </div>
-                            <div style={{ marginBottom: 40 }}>
-                              <h4>
-                                Q : Apa minimal Spesifikasi laptop untuk bisa
-                                mengikuti kelas ini
-                              </h4>
-                              <p>
-                                A : Tidak ada spesifikasi minimal laptop untuk
-                                mengikuti kelas ini. Selama laptopmu dapat
-                                menjalankan browser, code editor, kamu dapat
-                                mengikuti kelas ini.
-                              </p>
-                            </div>
-                            <div style={{ marginBottom: 40 }}>
-                              <h4>
-                                Q : Berapa minimal dan maksimal usia untuk bisa
-                                mengikuti kelas ini?
-                              </h4>
-                              <p>
-                                Kelas ini terbuka untuk semua. tidak ada batasan
-                                minimal usia. Selama kamu bisa menggunakan
-                                komputer dalam penggunaan sehari-hari, kamu
-                                dapat mengikuti kelas ini
-                              </p>
-                            </div>
-                            <div style={{ marginBottom: 40 }}>
-                              <h4>
-                                Q: Saya tidak bisa membayar langsung biaya
+                                Q : Saya tidak bisa membayar langsung biaya
                                 kelas, bagaimana mekanisme cicilan?
                               </h4>
                               <p>
-                                A : Biaya untuk kelas ini adalah Rp. 500.000,-.
-                                Jika kamu tidak dapat membayar langsung
-                                sekaligus, kamu dapat membayar dengan metode
-                                cicilan sampai dengan 3 kali pembayaran.
-                                Pertanyaan lebih lanjut, kamu dapat menghubungi
-                                kami di WA +6282199448180
+                                A: Kami menerima pembayaran melalui cicilan yang
+                                dapat kamu angsur sebanyak 3 kali. Pertanyaan
+                                lebih lanjut bisa menghubungi kami di
+                                +62852183532
+                              </p>
+                            </div>
+                            <div style={{ marginBottom: 40 }}>
+                              <h4>Q : Apakah ada jaminan kerja?</h4>
+                              <p>
+                                A : Kami akan membantu kamu mendapatkan
+                                pekerjaan. Perusahaan rekanan kami akan
+                                melakukan rekrutmen bagi setiap peserta yang
+                                lulus kelas.
                               </p>
                             </div>
                           </GlobalContentParagraf>
