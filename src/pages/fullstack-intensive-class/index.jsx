@@ -129,7 +129,7 @@ const Fullstack = () => {
         title: "Biaya Kelas",
         desc: "Pembayaran dilakukan upfront 100%",
       },
-      price: { price: 7499999, discount: 60 },
+      price: { price: 7499999, discount: 50 },
     },
   ]
 
@@ -633,7 +633,7 @@ const Fullstack = () => {
                   <Container>
                     <GlobalHeader
                       metaTitle="Jadwal dan Pilihan Kelas"
-                      title="Jadwal Kelas Intro Programming"
+                      title="Jadwal Kelas Fullstack Intensive Class"
                       desc="Silakan pilih jadwal kelas yang cocok dengan kamu"
                     />
 
